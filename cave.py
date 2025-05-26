@@ -1,0 +1,9 @@
+class Cave:
+    def __init__(sel, cave_name):
+        self.name = cave_name
+        self.description = None
+
+    def get_description(self, cave_description):
+        return self.description
+
+    
