@@ -7,3 +7,9 @@ Water_Banks = Asteroid("Water Banks")
 Mountain = Asteroid("Mountain")
 Forested_Area = Asteroid("Forested Area")
 
+Plains = set_description(" An waste open expanse of grass-like flora.")
+# descriptions for rest of them
+
+cavern.get_description():
+
+
