@@ -35,11 +35,4 @@ cavern.link_locations(dungeon, "south")
 
 
 
-dungeon.get_details()
-dungeon.get_details()
-dungeon.get_details()
-dungeon.get_details()
-dungeon.get_details()
-dungeon.get_details()
-dungeon.get_details()
 
