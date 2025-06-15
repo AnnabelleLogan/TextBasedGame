@@ -55,6 +55,10 @@ class Asteroid():
         self.linked_locations[direction] = locations_to_link
         
 
+    def get_details(self):
+    for direction in self.linked_locations:
+        locations = self.linked_locations[direction]
+        print( "The " + locations.get_name() + " is " + direction)
 
     
 
