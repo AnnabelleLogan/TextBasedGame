@@ -24,14 +24,27 @@ Landing_Site = Asteroid("Landing Site")
 Landing_Site = set_description(" land is lightly burnt due to landing.")
 
 
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+#etc.
 
-cavern.link_locations(dungeon, "south")
-cavern.link_locations(dungeon, "south")
-cavern.link_locations(dungeon, "south")
-cavern.link_locations(dungeon, "south")
-cavern.link_locations(dungeon, "south")
-cavern.link_locations(dungeon, "south")
-cavern.link_locations(dungeon, "south")
+
+current_cave = cavern          
+while True:		
+    print("\n")         
+    current_cave.get_details()         
+    command = input("> ")    
+    current_cave = current_cave.move(command) 
+
+
+
+
+
 
 
 
