@@ -196,6 +196,66 @@ if information == "Yes":
             type_effect("you step off your ship, finally landing of the planet-like asteroid", delay=0.2)
 
 
+from asteroid import Asteroid
+
+cavern.get_description():
+
+Plains = Asteroid("Plains")
+Plains = set_description(" An waste open expanse of grass-like flora.")
+
+Rocket_Pad = Asteroid("Rocket Pad")
+Rocket_Pad = set_description(" The Pad holding your rocket however you have not yet completed your mission.")
+
+Research_Facility = Astesroid("Research Facility")
+Research_Facility = set_description(" A empty and abandoned shelter.")
+
+Water_Trickles = Asteroid("Water trickles")
+Water_Trickles = set_description(" Water flowed through the cracks of stone.")
+
+Mountain = Asteroid("Mountain")
+Plains = set_description(" A peak of stone streching into the atmosphere.")
+
+Forested_Area = Asteroid("Forested Area")
+Plains = set_description(" A dense ecosystem filled with alien life.")
+
+Landing_Site = Asteroid("Landing Site")
+Landing_Site = set_description(" land is lightly burnt due to landing.")
+
+#Landing site
+Landing_Site.link_locations(Plains, "North")
+Landing_Site.link_locations(Mountain, "West")
+Landing_Site.link_locations(Landing_Pad, "East")
+#Plains
+Plains.link_locations(Landing_Site, "South")
+Plains.link_locations(Water_Trickles, "North")
+Plains.link_locations(Research_Facility, "East")
+Plains.link_locations(West_Trickles, "West")
+#Water trickles North
+Water_Trickles.link_locations(Plains, "South")
+Water_Trickles.link_locations(Mountain, "West")
+Water_Trickles.link_locations(Forested_Area, "East")
+#Mountain South
+Mountain.link_locations(Water_Trickles, "North")
+Mountain.link_locations(Landing_Site, "East")
+#Water trickles west
+Water_Trickles.link_locations(Mountain, "South")
+Water_Trickles.link_locations(Mountain, "North")
+Water_Trickles.link_locations(Plains, "East")
+#Mountain North
+Mountain.link_locations(Water_Trickles, "East")
+Mountain.link_locations(Water_Trickles, "South")
+#Landing_Pad
+Landing_Pad.link_locations(Research_Facility, "North")
+Landing_Pad.link_locations(Landing_Site, "West")
+#Research Facility
+Research_Facility.link_locations(Landing_Pad, "South")
+Research_Facility.link_locations(Forested_Area, "North")
+Research_Facility.link_locations(Plains, "West")
+#Forested Area
+Forested_Area.link_locations(Research_Facility, "South")
+Forested_Area.link_locations(Water_Trickles, "West")
+
+
 
 
 class Enemy(Character):
@@ -429,9 +489,3 @@ elif command == "fight":
                     dead = True
 
 
-
-
-# if curiosity == "No":
-#     print('You stand there awkwardly')
-
-# https://rosettacode.org/wiki/Hunt_the_Wumpus
