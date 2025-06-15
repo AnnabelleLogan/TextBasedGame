@@ -60,6 +60,17 @@ class Asteroid():
         locations = self.linked_locations[direction]
         print( "The " + locations.get_name() + " is " + direction)
 
+
+    def move(self, direction):
+    if direction in self.linked_locations:
+        return self.linked_locations[direction]
+    else:
+        print("You can't go that way")
+        return self
+
+
+
+
     
 
 
