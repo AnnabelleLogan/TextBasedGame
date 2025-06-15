@@ -1,15 +1,33 @@
 from asteroid import Asteroid
 
-Plains = Asteroid("Plains")
-Rocket_Pad = Asteroid("Rocket Pad")
-Research_Facility = Astesroid("Research Facility")
-Water_Banks = Asteroid("Water Banks")
-Mountain = Asteroid("Mountain")
-Forested_Area = Asteroid("Forested Area")
-
-Plains = set_description(" An waste open expanse of grass-like flora.")
-# descriptions for rest of them
-
 cavern.get_description():
+
+Plains = Asteroid("Plains")
+Plains = set_description(" An waste open expanse of grass-like flora.")
+
+Rocket_Pad = Asteroid("Rocket Pad")
+Rocket_Pad = set_description(" The Pad holding your rocket however you have not yet completed your mission.")
+
+Research_Facility = Astesroid("Research Facility")
+Research_Facility = set_description(" A empty and abandoned shelter.")
+
+Water_Trickles = Asteroid("Water trickles")
+Water_Trickles = set_description(" Water flowed through the cracks of stone.")
+
+Mountain = Asteroid("Mountain")
+Plains = set_description(" A peak of stone streching into the atmosphere.")
+
+Forested_Area = Asteroid("Forested Area")
+Plains = set_description(" A dense ecosystem filled with alien life.")
+
+Big_Asteroid = Asteroid("Big Asteroid")
+Big_Asteroid = set_description(" A large uneven surface mimicking a small planet ecosystem.")
+
+
+
+cavern.link_cave(dungeon, "south")
+grotto.link_cave(dungeon, "east")
+dungeon.link_cave(grotto, "west")
+
 
 
