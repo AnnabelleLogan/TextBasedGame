@@ -195,8 +195,8 @@ if information == "Yes":
             typing_effect(" Exterminate the Rock Lizard queen", delay=0.1)
 
 class Aesteroid():
-    def __init__(self, Asteroid_name):
-        self.name = Asteroid_name
+    def __init__(self, Planet_name):
+        self.name = Planet_name
         self.description = None
 
 # cavern = Aesteroid("cavern")
