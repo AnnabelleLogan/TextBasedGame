@@ -25,9 +25,21 @@ Landing_Site = set_description(" land is lightly burnt due to landing.")
 
 
 
-cavern.link_cave(dungeon, "south")
-grotto.link_cave(dungeon, "east")
-dungeon.link_cave(grotto, "west")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
+cavern.link_locations(dungeon, "south")
 
 
+
+dungeon.get_details()
+dungeon.get_details()
+dungeon.get_details()
+dungeon.get_details()
+dungeon.get_details()
+dungeon.get_details()
+dungeon.get_details()
 
