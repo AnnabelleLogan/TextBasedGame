@@ -20,8 +20,8 @@ Plains = set_description(" A peak of stone streching into the atmosphere.")
 Forested_Area = Asteroid("Forested Area")
 Plains = set_description(" A dense ecosystem filled with alien life.")
 
-Big_Asteroid = Asteroid("Big Asteroid")
-Big_Asteroid = set_description(" A large uneven surface mimicking a small planet ecosystem.")
+Landing_Site = Asteroid("Landing Site")
+Landing_Site = set_description(" land is lightly burnt due to landing.")
 
 
 
