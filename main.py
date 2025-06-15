@@ -41,6 +41,10 @@ while True:
     command = input("> ")    
     current_cave = current_cave.move(command) 
 
+harry = Enemy("Harry", "A smelly Wumpus")
+harry.set_conversation("Hangry…Hanggrry")
+harry.set_weakness("vegemite")
+
 
 
 
