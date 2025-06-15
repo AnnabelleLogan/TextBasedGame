@@ -199,7 +199,14 @@ class Aesteroid():
         self.name = Planet_name
         self.description = None
 
-# cavern = Aesteroid("cavern")
+    def get_description(self):
+        return self.description
+
+    def set_description(self, Asteroid_description):
+        self.description = Asteroid_description
+
+    def set_description(self, Asteroid_description):
+        self.description = Asteroid_description
 
 
 
