@@ -21,25 +21,27 @@ import sys
 # typing_effect("Hello, this is a typing effect!", delay=0.1)
 
 
+print('
 
 
-
-print('      _______________________________________________________________________')
-print('     (                                                                       |')
-print('     | Welcome to Kepler.B!                                                  |')
-print('     | Your journey starts here!                                             |')
-print('     | To move around in this space use the commands; North, and South       |')
-print('     | To board a ship write; Board. To unboard a ship write; Unboard.       |')
-print('     | All answers must have a capital, eg. "Yes" will work but "yes"        |')
-print('     | will not.                                                             |')
-print('     | ______________________________________________________________________|')
-print('     |/ ')
+      _______________________________________________________________________')
+     (                                                                       |')
+     | Welcome to Kepler.B!                                                  |')
+     | Your journey starts here!                                             |')
+     | To move around in this space use the commands; North, and South       |')
+     | To board a ship write; Board. To unboard a ship write; Unboard.       |')
+     | All answers must have a capital, eg. "Yes" will work but "yes"        |')
+     | will not.                                                             |')
+     | ______________________________________________________________________|')
+     |/ ')
 print(' ')
-print('  ╱|、_        ')
-print(' (` - 7      ')
-print(' |、⁻〵         ')
-print(' じしˍ,)ノ         ')
+print( '
+  ╱|、_        ')
+ (` - 7      ')
+ |、⁻〵         
+ じしˍ,)ノ         
 
+      ''
 print(' ')
 
 print('Current Location; Flight Dock #4, Kepler.B')
