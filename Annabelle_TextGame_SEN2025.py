@@ -20,28 +20,25 @@ import sys
 # # Example usage:
 # typing_effect("Hello, this is a typing effect!", delay=0.1)
 
-
 print('
-
-
-      _______________________________________________________________________')
-     (                                                                       |')
-     | Welcome to Kepler.B!                                                  |')
-     | Your journey starts here!                                             |')
-     | To move around in this space use the commands; North, and South       |')
-     | To board a ship write; Board. To unboard a ship write; Unboard.       |')
-     | All answers must have a capital, eg. "Yes" will work but "yes"        |')
-     | will not.                                                             |')
-     | ______________________________________________________________________|')
-     |/ ')
-print(' ')
-print( '
-  ╱|、_        ')
- (` - 7      ')
+      _______________________________________________________________________ 
+     (                                                                       | 
+     | Welcome to Kepler.B!                                                  | 
+     | Your journey starts here!                                             | 
+     | To move around in this space use the commands; North, and South       | 
+     | To board a ship write; Board. To unboard a ship write; Unboard.       | 
+     | All answers must have a capital, eg. "Yes" will work but "yes"        | 
+     | will not.                                                             | 
+     | ______________________________________________________________________| 
+     |/ 
+ #doesnt work to optimise but i will make it work then i will do it to the others
+  ╱|、_        
+ (` - 7      
  |、⁻〵         
- じしˍ,)ノ         
+ じしˍ,)ノ        
 
-      ''
+')
+
 print(' ')
 
 print('Current Location; Flight Dock #4, Kepler.B')
