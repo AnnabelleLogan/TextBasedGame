@@ -351,9 +351,9 @@ class Friend(Character):
     def pat(self):
         print(self.name + " pats you back!")
 
-harry = Enemy("Lizard Queen", "The source of the plague")
-harry.set_conversation("It's too late to stop it now, you could never win")
-harry.set_weakness("electricity")
+Lizard Queen = Enemy("Lizard Queen", "The source of the plague")
+Lizard Queen.set_conversation("It's too late to stop it now, you could never win")
+Lizard Queen.set_weakness("electricity")
 Mountain.set_character(Lizard Queen)
 Lesly = Friend("Josephine", "A friendly Lizard")
 Lesly.set_conversation("Hey!")
@@ -380,11 +380,11 @@ def set_item(self, item_name):
 def describe(self):
     print ("The [" + self.name + "] is here - " + self.description)
 
-vegemite = Item("electricity")
-vegemite.set_description("The Lizard Queen's weakness")
+electricity = Item("electricity")
+electricity.set_description("The Lizard Queen's weakness")
 grotto.set_item(electricity)
-torch = Item("walkie talkie")
-torch.set_description("A communication device")
+Walkie Talkie = Item("walkie talkie")
+Walkie Talkie.set_description("A communication device")
 dungeon.set_item(Walkie Talkie)
 
 while dead == False:
@@ -414,8 +414,8 @@ Class Item():
             "The I" + self.name + "I is here - " + delf.description
             )
 
-    torch = Item("Walkie Talkie")
-    torch.set_description("A communication device")
+    Walkie Talkie = Item("Walkie Talkie")
+    Walkie Talkie.set_description("A communication device")
     dungeon.set_item(Walkie Talkie)
     bag = []
 
